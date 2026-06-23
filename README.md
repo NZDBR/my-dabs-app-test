@@ -1,6 +1,8 @@
 # my-dabs-app-test
-DABs application creation and redeployment test
-Structure
+## DABs application creation and redeployment test
+## Structure
+
+'''text
 .
 ├── databricks.yml
 ├── resources/app.yml
@@ -25,3 +27,4 @@ Update the code, commit and push it, then run:
 databricks bundle deploy --target dev
 databricks bundle run my_test_app --target dev
 The same App should be updated without creating a duplicate or returning an App already exists error.
+'''
