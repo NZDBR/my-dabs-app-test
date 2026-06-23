@@ -10,6 +10,17 @@
     ├── app.py
     ├── app.yaml
     └── requirements.txt
+
+
+databricks.yml - bundle deployment configuration file at the root of the bundle directory,
+                 entry point for databricks bundle validate, deploy etc commands
+
+resources/app.yml - optional bundle resource file to keep the bundle configuration modular, read by DABs
+                 defines the Databricks App resource; it becomes useful when bundle contains multiple resources:
+                 job.yml, pipeline.yml, warehouse.yml
+
+src/app/app.yaml - defines App runtime configuration, and application environment variables 
+
 Deploy
 databricks bundle validate --target dev
 databricks bundle deploy --target dev
