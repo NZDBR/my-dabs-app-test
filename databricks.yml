@@ -1,0 +1,14 @@
+bundle:
+  name: my-dabs-ui-test
+
+resources:
+  apps:
+    my_test_app:
+      name: my-dabs-ui-test-cg-20260623
+      description: Simple app redeploy test
+      source_code_path: .
+
+targets:
+  dev:
+    mode: development
+    default: true

@@ -1,0 +1,6 @@
+resources:
+  apps:
+    my_test_app:
+      name: my-dabs-ui-test-cg-20260627
+      description: Simple app redeploy test
+      source_code_path: ../src/app
